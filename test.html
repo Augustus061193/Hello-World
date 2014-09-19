@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading screen test</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+<div id="loadingScreen">
+<div class="main">
+  <img src="excel_logo.png" width="190px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loading </img></br>
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+</div>
+</div>
+
+<!-- All your content goes here. the body -->
+<script language="javascript" type="text/javascript">
+    $('#board').hide();
+    setTimeout(function(){
+    $('.main').hide();
+    $('#board').show();
+  },5000);
+</script>
+</body>
+</html>

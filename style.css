@@ -1,0 +1,173 @@
+body{
+  position: relative;
+background-color: black;
+background-image: url('404-stripe.png'), url('404-noise.png');
+background-repeat: repeat-x, repeat;
+background-position: 0px 0%;
+background-attachment: fixed;
+font-size: 21px;
+font-family: Inconsolata,"Lucida Console",Monaco,Courier,monospace;
+line-height: 2em;
+color: #D4F8E3;
+text-shadow: -2px 0px 0px rgba(0, 0, 225, 0.4), -1px 0px 3px rgba(103, 171, 236, 0.6), 1px 0px 4px rgba(69, 112, 204, 0.5);
+animation: 0.5s steps(2, start) 0s normal none infinite blink, 7s linear 0s normal none infinite skip, 0.1s steps(2, start) 0s normal none infinite flicker;
+  font-family:Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  margin:0px;
+  width:98%;
+}
+
+@-moz-keyframes blink {
+  to {
+    background-color: #223332;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    background-color: #223332;
+  }
+}
+@keyframes blink {
+  to {
+    background-color: #223332;
+  }
+}
+@-moz-keyframes skip {
+  to {
+    background-position: 0 100%;
+  }
+}
+@-webkit-keyframes skip {
+  to {
+    background-position: 0 100%;
+  }
+}
+@keyframes skip {
+  to {
+    background-position: 0 100%;
+  }
+}
+@-moz-keyframes flicker {
+  to {
+    color: #bddeca;
+  }
+}
+@-webkit-keyframes flicker {
+  to {
+    color: #bddeca;
+  }
+}
+@keyframes flicker {
+  to {
+    color: #bddeca;
+  }
+}
+@-moz-keyframes ready {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes ready {
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes ready {
+  to {
+    visibility: hidden;
+  }
+}
+
+.main {
+  position: fixed;
+top: -150px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+margin: auto;
+width: 190px;
+height: 20px;
+z-index: 999;
+   /*centralized thanks to Eduardo Lopes suggestion */
+/*  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg); */
+}
+
+figure {
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  margin: 10px;
+  display: inline-block;
+  
+  background-color: white;
+  box-shadow: 0 0 1em rgba(255,255,255, .5);
+  border: 1px solid rgba(255,255,255, 0.1);
+  
+   /*transition: all 0.2s ease; */
+  
+  
+}
+
+figure:nth-child(1) {
+  -webkit-animation: changeColors 10s infinite;
+  -moz-animation: changeColors 10s infinite;
+  animation: changeColors 10s infinite;
+}
+
+figure:nth-child(2) {
+  -webkit-animation: changeColors 10s infinite 1s;
+  -moz-animation: changeColors 10s infinite 1s;
+  animation: changeColors 10s infinite 1s;
+ }
+
+figure:nth-child(3) {
+  -webkit-animation: changeColors 10s infinite 2s;
+  -moz-animation: changeColors 10s infinite 2s;
+  animation: changeColors 10s infinite 2s;
+ }
+
+figure:nth-child(4) {
+  -webkit-animation: changeColors 10s infinite 3s;
+  -moz-animation: changeColors 10s infinite 3s;
+  animation: changeColors 10s infinite 3s;
+}
+
+figure:nth-child(5) {
+  -webkit-animation: changeColors 10s infinite 4s;
+  -moz-animation: changeColors 10s infinite 4s;
+  animation: changeColors 10s infinite 4s;
+}
+
+@-webkit-keyframes changeColors {
+  0%, 49% {
+    background-color: #3FC380;
+    box-shadow: 0 0 1em rgba(229,41,0, 1);
+  }
+  50%, 100% {
+    background-color: white;
+    box-shadow: 0 0 1em rgba(255,255,255, .5);
+  }
+}
+@-moz-keyframes changeColors {
+  0%, 49% {
+    background-color: #3FC380;
+    box-shadow: 0 0 1em rgba(229,41,0, 1);
+  }
+  50%, 100% {
+    background-color: white;
+    box-shadow: 0 0 1em rgba(255,255,255, .5);
+  }
+}
+@keyframes changeColors {
+  0%, 49% {
+    background-color: #3FC380;
+    box-shadow: 0 0 1em rgba(229,41,0, 1);
+  }
+  50%, 100% {
+    background-color: white;
+    box-shadow: 0 0 1em rgba(255,255,255, .5);
+  }
+}
