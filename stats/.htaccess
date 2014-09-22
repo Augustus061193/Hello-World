@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "aiswaryacinemascreens.com Statistics"
+AuthUserFile /var/chroot/home/content/40/10326740/html/stats/.statspwd
+Require valid-user
+DirectoryIndex index.html
